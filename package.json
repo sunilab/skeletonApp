@@ -1,0 +1,53 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "A dashboard that shows hierarchies and their state at a glance.",
+  "main": "index.js",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.18.1",
+    "eslint-plugin-react": "^7.7.0",
+    "path": "^0.12.7",
+    "pre-git": "^3.17.0",
+    "uglifyjs-webpack-plugin": "^1.2.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config webpack.prod.js",
+    "start": "./node_modules/.bin/webpack-dev-server --open --config webpack.dev.js",
+    "lint": "./node_modules/.bin/eslint --ext .jsx --ext .js .",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunilab/sunburst.git"
+  },
+  "author": "Sunil Abhyankar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunilab/sunburst/issues"
+  },
+  "homepage": "https://github.com/sunilab/sunburst#readme",
+  "release": {
+    "analyzeCommits": "simple-commit-message"
+  },
+  "config": {
+    "pre-git": {
+      "pre-commit": [
+        "npm run lint"
+      ]
+    }
+  }
+}

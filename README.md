@@ -1,6 +1,6 @@
 # React App Template
 
-This repository contains the template for starting a ReactJS based application. The template has a placeholder App component that should be the starting point for the React application.
+This repository contains the template for starting a ReactJS based application. The template has a placeholder App component (App.js) that should be the starting point for the React application.
 
 In addition the template comes loaded with the following items based on coding guidelines and best  practices:
 

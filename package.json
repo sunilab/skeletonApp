@@ -1,7 +1,7 @@
 {
-  "name": "dashboard",
+  "name": "react-app-template",
   "version": "1.0.0",
-  "description": "A dashboard that shows hierarchies and their state at a glance.",
+  "description": "Start a new ReactJS application using this template.",
   "main": "index.js",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -32,14 +32,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sunilab/sunburst.git"
+    "url": "git+https://github.com/sunilab/react-app-template"
   },
   "author": "Sunil Abhyankar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sunilab/sunburst/issues"
+    "url": "https://github.com/sunilab/react-app-template/issues"
   },
-  "homepage": "https://github.com/sunilab/sunburst#readme",
+  "homepage": "https://github.com/sunilab/react-app-template#readme",
   "release": {
     "analyzeCommits": "simple-commit-message"
   },

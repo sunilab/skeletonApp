@@ -9,3 +9,4 @@ In addition the template comes loaded with the following items based on coding g
 - Support for git hooks is included for getting started with continuous integration/delivery scenarios. The package.json config section has an initial hook 'pre-commit' that runs the lint command on commit.
 - Support for a dev server is included using the webpack dev server module. The dev server will automatically refresh the browser page when the app code is updated. Start the dev server using 'npm start'.
 - Support for dev and prod versions of webpack config are included. The prod version requires the installation of the node-app-template repo from https://github.com/sunilab/node-app-template.
+- The prod version of webpack supports uglifying and minimizing the code, enabling the NODE_ENV environment variable to 'production' for optimization of libraries like React and code-splitting of the common libraries into its own bundle.

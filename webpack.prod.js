@@ -8,7 +8,7 @@ module.exports = merge(common, {
     output: {
         filename: '[name].bundle.js',
         /* eslint-disable no-undef */
-        path: path.join(__dirname, '../node-app-template/static')
+        path: path.join(__dirname, 'dist')
         /* eslint-enable no-undef */
     },
     devtool: 'source-map',

@@ -9,7 +9,11 @@ In addition the template comes preinstalled with tools and processes based on co
 - Support for linting through eslint. A standard configuration file '.eslintrc.js' is included along with a package.json srcipt 'lint' that can be run with the following command: 'npm run lint' to run the code through the linting process.
 - Support for git hooks is included for getting started with continuous integration/delivery scenarios. The package.json config section has an initial hook 'pre-commit' that runs the lint command on commit.
 - Support for a dev server is included using the webpack dev server module. The dev server will automatically refresh the browser page when the app code is updated. Start the dev server using 'npm start'.
-- Support for dev and prod versions of webpack config are included. The prod version requires the installation of the node-app-template repo from https://github.com/sunilab/node-app-template.
+- Support for dev and prod versions of webpack config are included.
+- A corresponding node app template can be used in conjunction with this template to run the React app in node. Just update the webpack.production.js file to point the output path to the static folder in the node-app-template.
+
+    https://github.com/sunilab/node-app-template
+    
 - The prod version of webpack supports uglifying and minimizing the code, enabling the NODE_ENV environment variable to 'production' for optimization of libraries like React and code-splitting of the common libraries into its own bundle.
 
 ## Instructions
@@ -31,6 +35,7 @@ In addition the template comes preinstalled with tools and processes based on co
 
     This command will bundle the application into two files in the dist folder:
      >> main.bundle.js - Contains the code for your application.
+
      >> common.bundle.js - Contains common code.
 
     Deploy the contents of the 'dist' folder to a web server for running the application. If you clone the 'node-app-template' application, copy the contents of the 'dist' folder to the 'static' folder in the 'node-app-template' application.

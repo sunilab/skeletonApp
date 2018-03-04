@@ -1,7 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import path from 'path';
-import _ from 'lodash';
 import styled from 'styled-components';
 import ComponentRenderer from './ComponentRenderer';
 
@@ -14,7 +12,9 @@ class UploadBase extends React.Component {
         this.state = {
             fileName: 'SampleComponent',
             showName: false,
+            /* eslint-disable */
             serviceBaseURL: SERVICE_URL,
+            /* eslint-enable */
             response: null
         };
     }
@@ -37,35 +37,35 @@ class UploadBase extends React.Component {
         );
     }
 
-    uploadSketchFile (e) {
+    uploadSketchFile () {
         var that = this;
         this.setState({ showName: true });
         // call the backend upload web service
-        // upload path
-        let uploadPath = path.join(SERVICE_URL, 'upload');
         axios({
             url: '/upload',
             method: 'post',
+            /* eslint-disable */
             baseURL: SERVICE_URL,
+            /* eslint-ensable */
             data: {
-                "fileName": this.state.fileName
+                'fileName': this.state.fileName
             },
             headers: {
                 'Content-Type': 'application/json'
             }
-        })
-        .then(function (response) {
+        }).then(function (response) {
             that.setState({ intermediateComponent: response.data });
-        })
-        .catch(function (error) {
+        }).catch(function (error) {
+            /* eslint-disable */
             console.log(`error: ${error}`);
+            /* eslint-enable */
         });
     }
 
     fileNameChangeHandler (e) {
         this.setState({ fileName: e.target.value, showName: false });
     }
-};
+}
 
 /**
  * Component that renders the Upload page where the user uploads the Sketch file and shows the resulting Component skeleton.

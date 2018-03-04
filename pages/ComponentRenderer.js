@@ -28,7 +28,7 @@ class ComponentRendererBase extends React.Component {
             })
         );
     }
-};
+}
 
 /**
  * Renders a React component from the intermediate component. It recurses through the intermediate component

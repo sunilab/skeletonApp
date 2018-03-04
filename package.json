@@ -1,13 +1,15 @@
 {
-  "name": "react-app-template",
+  "name": "skeleton-app",
   "version": "1.0.0",
-  "description": "Start a new ReactJS application using this template.",
+  "description": "The application companion to the skeleton web service that displays the output of the call to the skeleton web service to display the component.",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "lodash": "^4.17.5",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "styled-components": "^3.1.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -32,14 +34,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sunilab/react-app-template"
+    "url": "git+https://github.com/sunilab/skeleton"
   },
   "author": "Sunil Abhyankar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sunilab/react-app-template/issues"
+    "url": "https://github.com/sunilab/skeleton/issues"
   },
-  "homepage": "https://github.com/sunilab/react-app-template#readme",
+  "homepage": "https://github.com/sunilab/skeleton#readme",
   "release": {
     "analyzeCommits": "simple-commit-message"
   },

@@ -1,11 +1,15 @@
 // Main React application entry point
 
 import React from 'react';
+import Upload from './pages/Upload';
 
 class App extends React.Component {
     render () {
         return (
-            <h1>React App Template</h1>
+            <div>
+                <h1>React App Template</h1>
+                <Upload/>
+            </div>
         );
     }
 }
